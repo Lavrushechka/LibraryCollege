@@ -13,24 +13,22 @@
 
         <TextBlock Grid.Row="0"
                    Text="Библиотека колледжа"
-                   FontSize="28" FontWeight="Bold"
+                   Style="{StaticResource HeaderText}"
                    HorizontalAlignment="Center"
-                   Margin="0,0,0,30"
-                   Foreground="#2C3E50"/>
+                   Margin="0,0,0,30"/>
 
         <StackPanel Grid.Row="1" VerticalAlignment="Center">
             <TextBlock Text="Логин:" Margin="0,0,0,5" FontWeight="SemiBold"/>
-            <TextBox x:Name="TxtLogin" Height="30" FontSize="14" Padding="5"/>
+            <TextBox x:Name="TxtLogin"/>
 
             <TextBlock Text="Пароль:" Margin="0,15,0,5" FontWeight="SemiBold"/>
-            <PasswordBox x:Name="TxtPassword" Height="30" FontSize="14" Padding="5"/>
+            <PasswordBox x:Name="TxtPassword"/>
 
             <CheckBox Content="Запомнить меня" Margin="0,15,0,0"/>
 
             <Button Content="Войти" Height="40" Margin="0,20,0,0"
-                    FontSize="16" FontWeight="Bold"
-                    Background="#3498DB" Foreground="White"
-                    Click="BtnLogin_Click"/>
+                    Style="{StaticResource PrimaryButton}"
+                    FontSize="16" Click="BtnLogin_Click"/>
         </StackPanel>
     </Grid>
 </Window>
