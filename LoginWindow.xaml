@@ -1,0 +1,36 @@
+﻿<Window x:Class="LibraryCollege.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Авторизация — Библиотека колледжа"
+        Height="400" Width="500"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Text="Библиотека колледжа"
+                   FontSize="28" FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,30"
+                   Foreground="#2C3E50"/>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Center">
+            <TextBlock Text="Логин:" Margin="0,0,0,5" FontWeight="SemiBold"/>
+            <TextBox x:Name="TxtLogin" Height="30" FontSize="14" Padding="5"/>
+
+            <TextBlock Text="Пароль:" Margin="0,15,0,5" FontWeight="SemiBold"/>
+            <PasswordBox x:Name="TxtPassword" Height="30" FontSize="14" Padding="5"/>
+
+            <CheckBox Content="Запомнить меня" Margin="0,15,0,0"/>
+
+            <Button Content="Войти" Height="40" Margin="0,20,0,0"
+                    FontSize="16" FontWeight="Bold"
+                    Background="#3498DB" Foreground="White"
+                    Click="BtnLogin_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

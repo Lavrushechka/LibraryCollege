@@ -6,13 +6,14 @@
         WindowStartupLocation="CenterScreen">
     <Grid>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock Text="Добро пожаловать!"
-                       FontSize="32"
-                       FontWeight="Bold"
-                       HorizontalAlignment="Center"
-                       Margin="0,0,0,30"/>
-            <Button Content="Войти" Width="150" Height="40" Margin="0,0,0,10"/>
-            <Button Content="Выход" Width="150" Height="40"/>
+            <Viewbox Width="80" Height="80" HorizontalAlignment="Center" Margin="0,0,0,15">
+                <Canvas Width="24" Height="24">
+                    <Path Fill="#2C3E50" Data="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/>
+                </Canvas>
+            </Viewbox>
+            <TextBlock Text="Добро пожаловать!" FontSize="32" FontWeight="Bold" Foreground="#2C3E50" HorizontalAlignment="Center" Margin="0,0,0,30"/>
+            <Button Content="Войти" Width="180" Height="45" Margin="0,0,0,15" Background="#3498DB" Foreground="White" FontSize="16" FontWeight="SemiBold" BorderThickness="0" Cursor="Hand"/>
+            <Button Content="Выход" Width="180" Height="45" Background="#3498DB" Foreground="White" FontSize="16" FontWeight="SemiBold" BorderThickness="0" Cursor="Hand" Click="BtnExit_Click"/>
         </StackPanel>
     </Grid>
 </Window>
